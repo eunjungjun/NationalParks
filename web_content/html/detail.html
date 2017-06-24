@@ -1,0 +1,40 @@
+<div class="modal-dialog">
+      <!-- Modal content-->
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title" id="detail_header">{% raw data['name'] %}</h4>
+    </div>
+    <div class="modal-body" id="detail_body">
+      <a href="{{ data['page'] }}" target="_blank">
+        <img src="{{ data['url'] }}">
+      </a>
+      <p>
+      <div id="descrip">
+        {% raw data['descrip'] %}
+      </div>
+      <p>
+      <table>
+        <tr>
+          <th>Location:</th>
+          <td>{{ data['state'] }}</td>
+        </tr>
+        <tr>
+          <th>Date Established:</th>
+          <td>{{ data['date'] }}</td>
+        </tr>
+        <tr>
+          <th>Area:</th>
+          <td>{{ data['area'] }}</td>
+        </tr>
+        <tr>
+          <th>Visitors (2016):</th>
+          <td>{{ data['visitors'] }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>

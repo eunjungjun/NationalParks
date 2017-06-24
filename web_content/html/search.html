@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/img/favicon.png" />
+  <link rel="apple-touch-icon" href="/img/favicon.png" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="/js/parks.js"></script>
+  <link href = "/css/style.css" rel = "stylesheet">
+  <title>
+    Search National Parks
+  </title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <i class="fa fa-book"></i> Parks Database
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-sm-4" id="search_col">
+        <div class="alert alert-info">
+          <center><h4>Search National Parks</h4>
+          <form class="form" id="search_form">
+          <label for="name">Park:</label>
+          <input type="text" id="name" name="name" placeholder="all parks"></input>
+          <br>
+          <label for="state">State:</label>
+          <select id="state" name="state">
+          </select>
+          <p>
+          <input type="submit" id="btn_submit" value="Search"></input>
+          </form>
+          </center>
+        </div>
+        <div class="alert alert-success" id="facts_container">
+          <center><h4>Fun Park Facts</h4></center>
+          <ul id="facts">
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-8" id="results_col">
+        <!-- Results will go here -->
+      </div>
+    </div>
+    <div id="details" class="modal fade" role="dialog">
+    </div>
+  </div>
+</body>
+</html>
